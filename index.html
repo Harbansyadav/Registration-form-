@@ -1,0 +1,215 @@
+<?php
+
+    include('connection.php');
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Registration Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+<style>
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background:#09C;
+}
+input[type=text]{width:100%; padding:5px; margin:5px;}
+input[type=number]{width:50%; padding:5px; margin:5px;}
+input[type=email]{width:80%; padding:5px; margin:5px;}
+input[type=password]{width:80%; padding:5px; margin:5px;}
+h1 { text-align:center;}
+</style>
+
+</head>
+
+<body>
+
+<header>
+   
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-book-reader fa-2x mx-3"></i>hrb</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Registration</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a href="#" class="nav-link">Web PAGES</a>
+                <div class="dropdown-content">
+                  <a href="sec.html">Home</a>
+                  <a href="https://www.addysan.com/blog/">Blogs</a>
+                </div>
+              </div>
+            </li>
+    
+          </ul>
+        </div>
+      </nav>
+    
+
+<div class="container">
+    <h1 class="well">Feedback Registration Form</h1>
+    <div class="col-lg-12 well">
+	<div class="row">
+				<form action="register.php" method="POST">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-sm-4 form-group">
+								<label>First Name</label>
+								<input type="text" placeholder="Enter First Name Here.." class="form-control" name="name" required>
+							</div>
+							<div class="col-sm-4 form-group">
+								<label>Last Name</label>
+								<input type="text" placeholder="Enter Last Name Here.." class="form-control" name="lastname">
+                            </div>
+                            
+                            
+                             <div class="col-sm-4 form-group">
+								<label requied>Gender</label><br>
+																
+                             <input type="text" placeholder="Gender" class="form-control" name="gender" required>
+							</div>
+                        </div>
+                           
+                                   
+                               
+                               
+                                                      
+                            
+                                 
+                           
+                    
+                       <div class="row">
+                       
+                        <div  class="col-md-6 form-group">
+                            <label>Enter email addresses</label>
+                                <input type="emails" placeholder="Enter your emails" class="form-control" name="emails" multiple required>
+                                 </div>
+                                 <div class="col-md-6 form-group">
+                                     <label>DOB</label>
+                                     <input type="Date" placeholder="Enter Sem Here.." class="form-control" name="DOB" required>
+				        </div>
+                    </div>	
+                                
+                        	
+                        
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<label>Education Qualification or Equivlent to Grduation</label>
+								<input type="textarea" placeholder="Qualification" class="form-control" name="Qualification"><br>
+								<input type="texarea" placeholder="Board / University" class="form-control" name="Board"><br>
+								<input type="textarea" placeholder="Passed / Perusing" class="form-control" name="Passed"><br>
+								<input type="textarea" placeholder="Score" class="form-control" name="Score"><br>
+								
+                                </div>		
+						</div>
+								
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input type="text" placeholder="123-456-7890" class="form-control" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+					</div>		
+					<div>
+						<label>Address</label>
+						<input type="text" placeholder="Enter Address" class="form-control" name="Address" required>
+                    </div>
+                    
+                    <div>
+                        <lable>Course</lable>
+                        <input type="text" placeholder="Enter Course" class="form-control" name="course" required>
+
+                    </div>
+						
+						
+						
+
+						<hr>
+					
+                    <center>
+					<button type="Submit" value="Register">Submit</button>					
+					</center>
+                    </div>
+				</form> 
+				</div>
+	</div>
+	</div>
+	    
+	    <hr>
+	
+	
+	
+<footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">We love who we are and would be glad to get connected</p>
+          <p class="pt-4 text-muted">Copyright ©2020 All rights reserved | This template is made by
+            <span> HARBANS YADAV</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light"></h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+    </div>
+    </header>
+</body>
+</html>
